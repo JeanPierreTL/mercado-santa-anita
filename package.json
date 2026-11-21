@@ -1,0 +1,13 @@
+{
+  "name": "mercado-santa-anita",
+  "version": "1.0.0",
+  "description": "Prototipo del Mercado Mayorista de Santa Anita (DevSecOps)",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test --test-reporter=spec tests/*.test.js",
+    "test:ci": "node --test --test-reporter=spec --test-reporter-destination=stdout --test-reporter=junit --test-reporter-destination=test-results.xml tests/*.test.js",
+    "lint": "node scripts/check-syntax.js"
+  },
+  "engines": { "node": ">=20" }
+}
