@@ -1,0 +1,5 @@
+node_modules/
+test-results.xml
+_site/
+.env
+*.log

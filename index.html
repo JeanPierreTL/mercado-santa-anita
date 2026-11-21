@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercado Mayorista de Santa Anita - Prototipo</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app"></div>
+<div id="toast"></div>
+<dialog id="dlg"></dialog>
+
+<!-- Utilidades -->
+<script src="js/utils.js"></script>
+<!-- MODELO: datos y reglas de acceso a datos -->
+<script src="js/model/seed.js"></script>
+<script src="js/model/store.js"></script>
+<!-- Componentes visuales reutilizables -->
+<script src="js/views/ui.js"></script>
+<!-- CONTROLADORES: acciones y reglas de negocio por modulo (epica) -->
+<script src="js/controllers/authController.js"></script>
+<script src="js/controllers/formalizacionController.js"></script>
+<script src="js/controllers/comercioController.js"></script>
+<script src="js/controllers/logisticaController.js"></script>
+<script src="js/controllers/estibajeController.js"></script>
+<!-- VISTAS: pantallas por rol -->
+<script src="js/views/shared.js"></script>
+<script src="js/views/loginView.js"></script>
+<script src="js/views/adminViews.js"></script>
+<script src="js/views/comercianteViews.js"></script>
+<script src="js/views/compradorViews.js"></script>
+<script src="js/views/transportistaViews.js"></script>
+<script src="js/views/seguridadViews.js"></script>
+<!-- Enrutador y arranque -->
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
