@@ -72,9 +72,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: aquasecurity/trivy-action@0.28.0
-        with:
-          scan-type: fs
-          scanners: vuln,secret,misconfig
-          severity: HIGH,CRITICAL
-          exit-code: '1'
+      - name: Trivy (vulnerabilidades, secretos y configuraciones graves)
+        run: |
+          docker run --rm -v "$PWD:/repo" aquasec/trivy:0.57.1 fs \
+            --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --exit-code 1 /repo
