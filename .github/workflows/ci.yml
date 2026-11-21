@@ -37,7 +37,7 @@ jobs:
         run: npm run test:ci
       - name: Guardar resultados de pruebas
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: resultados-pruebas
           path: test-results.xml
