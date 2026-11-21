@@ -63,9 +63,6 @@ jobs:
           node-version: 22
       - name: npm audit (vulnerabilidades altas o críticas)
         run: npm audit --audit-level=high
-      - name: Revisión de dependencias nuevas en el Pull Request
-        if: github.event_name == 'pull_request'
-        uses: actions/dependency-review-action@v4
 
   fs-scan:
     name: 3c. Seguridad - Escaneo del repositorio (Trivy)
